@@ -7,13 +7,13 @@ To Install & Run This Project, Follow These Steps:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/mdiktushar/Laravel-12-JWT-Auth-Template-Repository-Pattern.git
+    git clone https://github.com/iamemonhowlader/shopease-backend
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd christianmoo658-backend
+    cd shopease-backend
     ```
 
 3. Install project dependencies:
@@ -27,7 +27,6 @@ To Install & Run This Project, Follow These Steps:
     ```sh
     cp .env.example .env
     ```
-
 5. Open the `.env` file and configure your database connection:
    - Set the `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` to match your local database settings.
 
@@ -46,13 +45,13 @@ To Install & Run This Project, Follow These Steps:
 8. Create a symbolic link for the storage:
 
     ```sh
-    php artisan storage:link
+    php artisan storage:link (only for image)
     ```
 
 9. Seed the database with initial data:
 
     ```sh
-    php artisan db:seed
+    php artisan db:seed(only for seeder data)
     ```
 
 10. Optimize the application:
@@ -71,11 +70,6 @@ To Install & Run This Project, Follow These Steps:
 
     ```sh
     php artisan serve
-    ```
-13. Start the queue job:
-
-    ```sh
-    php artisan queue:work
     ```
 You can now access the application at `http://localhost:8000`.
 # repo-pattern-jwt-laravel
