@@ -231,7 +231,6 @@ If the result set is large (> 10,000 rows), it returns:
   "status": "processing"
 }
 ```
-
 ## API routes
 
 The key API routes are:
