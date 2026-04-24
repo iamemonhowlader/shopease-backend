@@ -21,23 +21,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item mt-4">
-                    <p class="nav-label small text-muted text-uppercase fw-bold mb-2 px-3 opacity-50" style="font-size: 0.7rem; letter-spacing: 0.1em;">Settings</p>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link {{Route::is('v1.setting.mail.show') ? 'active': ''}}" href="{{route('v1.setting.mail.show')}}">
-                        <i data-feather="mail" class="nav-icon me-2 icon-xxs"></i>
-                        <span>Email Config</span>
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#!">
-                        <i data-feather="settings" class="nav-icon me-2 icon-xxs"></i>
-                        <span>System Preferences</span>
-                    </a>
-                </li>
+               
             </ul>
         </div>
     </div>
