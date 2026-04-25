@@ -37,7 +37,6 @@
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <label for="password" class="form-label mb-0">Password</label>
-                                        <a href="{{route('password.request')}}" class="text-primary small fw-semibold text-decoration-none">Forgot password?</a>
                                     </div>
                                     <input type="password" id="password" class="form-control form-control-lg" name="password"
                                         placeholder="••••••••" required>
@@ -65,9 +64,6 @@
                                 
                                 <!-- Footer -->
                                 <div class="mt-4 text-center">
-                                    <p class="mb-0 text-muted">Don't have an account? 
-                                        <a href="{{route('register')}}" class="text-primary fw-bold text-decoration-none ms-1">Create Account</a>
-                                    </p>
                                 </div>
                             </form>
                         </div>
