@@ -37,7 +37,7 @@
                         <div class="avatar avatar-md avatar-indicators avatar-online">
                             @php
                                 $user = auth()->user();
-                                $firstName = $user->first_name ?? 'U';
+                                $firstName = $user->first_name ?? 'Guest';
                                 $initial = strtoupper(substr($firstName, 0, 1));
                                 $colors = ['primary', 'success', 'info', 'warning', 'danger'];
                                 $colorIndex = ord($initial) % count($colors);
@@ -56,8 +56,8 @@
                                     {{ $initial }}
                                 </div>
                                 <div class="lh-1">
-                                    <h6 class="mb-0 fw-bold">{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</h6>
-                                    <p class="mb-0 small text-muted mt-1">{{ auth()->user()->email }}</p>
+                                    <h6 class="mb-0 fw-bold">{{ auth()->user()->first_name ?? 'Guest' }} {{ auth()->user()->last_name ?? 'User' }}</h6>
+                                    <p class="mb-0 small text-muted mt-1">{{ auth()->user()->email ?? 'guest@example.com' }}</p>
                                 </div>
                             </div>
                         </div>
